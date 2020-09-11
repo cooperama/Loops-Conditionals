@@ -59,3 +59,32 @@ for (let i = 1; i <= 100; i++) {
     console.log(i)
   }
 }
+
+
+// 5. Getting to Know You
+console.log('~~~~~')
+console.log('5. Getting to Know You')
+console.log('~~~~~')
+
+const kenny = ["Kenny", 1000, "Austin"];
+const jimHaff = ["Jim H", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const jimClark = ["Jim C", 186, "LA"];
+const ryan = ["Ryan", 65, "Denver"];
+
+kenny[0] = "Gameboy";
+jimClark[1] += 1;
+ryan[2] = 'Gotham City';
+reuben.pop();
+reuben.push('Chicago')
+jimHaff.pop();
+jimHaff.push('Seoul', 'Bali', 'Queenstown')
+jimHaff.splice(2, 1)
+
+console.log(jimHaff)
+console.log(jimClark)
+console.log(kenny)
+console.log(reuben)
+console.log(ryan)
+
+
