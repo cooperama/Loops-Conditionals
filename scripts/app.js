@@ -19,3 +19,13 @@ for (let i = 0; i <= 200; i+=2) {
   console.log(i);
 }
 
+// 3. Excited Kitten
+console.log('~~~~~')
+console.log('3. Excited Kitten')
+console.log('~~~~~')
+
+for (let i = 0; i < 20; i++) {
+  console.log('Love me, pet me! HSSSS!');
+}
+
+
