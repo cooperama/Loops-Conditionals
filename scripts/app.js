@@ -200,9 +200,12 @@ for (let i = 0; i < 3; i++) {
   console.log(`Thom is wearing a ${thomGetsDressed()} today.`)
 }
 
+// Dirty Laundry
+kristynsCloset.forEach(item => console.log(`WHIRR: Now washing ${item}`));
 
 
-
-
-
+// Inventory
+for (let i = 0; i < thomsCloset.length; i++) {
+  console.log(thomsCloset[i]);
+}
 
