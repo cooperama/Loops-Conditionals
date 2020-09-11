@@ -39,3 +39,23 @@ console.log('~~~~~')
 console.log('4. Fizz Buzz')
 console.log('~~~~~')
 
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 === 0 && i % 5 === 0) console.log("FizzBuzz");
+  else if (i % 3 === 0) console.log('Fizz');
+  else if (i % 5 === 0) console.log('Buzz');
+  else console.log(i);
+}
+
+// alternative? 
+
+let res;
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 === 0 || i % 5 === 0) {
+    res = '';
+    if (i % 3 === 0) res += 'Fizz';
+    if (i % 5 === 0) res += 'Buzz';
+    console.log(res);
+  } else {
+    console.log(i)
+  }
+}
