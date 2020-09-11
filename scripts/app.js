@@ -88,3 +88,23 @@ console.log(reuben)
 console.log(ryan)
 
 
+// 6. Yell at the Ninja Turtles
+console.log('~~~~~')
+console.log('6. Yell at the Ninja Turtles')
+console.log('~~~~~')
+
+const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
+
+for (let i = 0; i < ninjaTurtles.length; i++) {
+  console.log(ninjaTurtles[i].toUpperCase());
+}
+
+for (let i = 0; i < ninjaTurtles.length; i++) {
+  ninjaTurtles[i] = ninjaTurtles[i].split('');
+  for (let j = 0; j < ninjaTurtles[i].length; j+=2) {
+    ninjaTurtles[i][j] = ninjaTurtles[i][j].toUpperCase();
+  }
+  ninjaTurtles[i] = ninjaTurtles[i].join('')
+}
+
+console.log(ninjaTurtles)
