@@ -72,13 +72,24 @@ const reuben = ["Reuben", 22, "Durham"];
 const jimClark = ["Jim C", 186, "LA"];
 const ryan = ["Ryan", 65, "Denver"];
 
+// 1.
 kenny[0] = "Gameboy";
+
+// 2.
 jimClark[1] += 1;
+
+// 3.
 ryan[2] = 'Gotham City';
+
+// 4.
 reuben.pop();
 reuben.push('Chicago')
+
+// 5.
 jimHaff.pop();
 jimHaff.push('Seoul', 'Bali', 'Queenstown')
+
+// Bonus
 jimHaff.splice(2, 1)
 
 console.log(jimHaff)
@@ -88,17 +99,22 @@ console.log(reuben)
 console.log(ryan)
 
 
+
+
 // 6. Yell at the Ninja Turtles
 console.log('~~~~~')
 console.log('6. Yell at the Ninja Turtles')
 console.log('~~~~~')
 
+// 1.
 const ninjaTurtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo'];
 
+// 2.
 for (let i = 0; i < ninjaTurtles.length; i++) {
   console.log(ninjaTurtles[i].toUpperCase());
 }
 
+// 3.
 for (let i = 0; i < ninjaTurtles.length; i++) {
   ninjaTurtles[i] = ninjaTurtles[i].split('');
   for (let j = 0; j < ninjaTurtles[i].length; j+=2) {
@@ -108,3 +124,85 @@ for (let i = 0; i < ninjaTurtles.length; i++) {
 }
 
 console.log(ninjaTurtles)
+
+
+
+
+// 7. Return of the Closets
+console.log('~~~~~')
+console.log('7. Return of the Closets')
+console.log('~~~~~')
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+// Alien Attire
+let kristynsShoe = kristynsCloset.shift();
+thomsCloset[2].push(kristynsShoe);
+console.log(thomsCloset)
+
+// Dress 'em Up
+function kristynGetsDressed() {
+  let kristynsOutfit = '';
+  let items = 3;
+  let index;
+  for (let i = 0; i < items; i++) {
+    index =  Math.floor(Math.random() * kristynsCloset.length);
+    if (i < kristynsCloset.length - 1) kristynsOutfit += kristynsCloset[index] + ', ';
+    else kristynsOutfit += 'and ' + kristynsCloset[index]
+  }
+  return kristynsOutfit;
+}
+for (let i = 0; i < 3; i++) {
+  console.log(`Kristyn is wearing ${kristynGetsDressed()} today. So stylish!`)
+}
+
+
+function thomGetsDressed() {
+  let thomsOutfit = '';
+  let index;
+  for (let i = 0; i < thomsCloset.length; i++) {
+    index =  Math.floor(Math.random() * thomsCloset[i].length);
+    if (i < thomsCloset.length - 1) thomsOutfit += thomsCloset[i][index] + ', ';
+    else thomsOutfit += 'and ' + thomsCloset[i][index];
+  }
+  return thomsOutfit;
+}
+for (let i = 0; i < 3; i++) {
+  console.log(`Thom is wearing a ${thomGetsDressed()} today.`)
+}
+
+
+
+
+
+
+
