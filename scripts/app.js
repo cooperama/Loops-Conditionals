@@ -222,10 +222,27 @@ function triangles(argument=7) {
   let triangle;
   for (let i = 1; i <= argument; i++) {
     triangle = '';
-    for (let j = i; j > 0; j--) {
+    for (let j = 0; j < i; j++) {
       triangle += '#';
     }
     console.log(triangle);
   }
 }
-triangles();
+// triangles();
+
+
+function rightIsosceles(argument=7) {
+  let triangle;
+  for (let i = 1; i <= argument; i++) {
+    triangle = '';
+    for (let k = 0; k <= argument - i; k++) {
+      triangle += ' ';
+    }
+    for (let j = 0; j < i; j++) {
+      triangle += '#';
+    }
+    console.log(triangle);
+  }
+}
+// rightIsosceles();
+
