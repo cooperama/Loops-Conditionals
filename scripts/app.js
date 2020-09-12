@@ -246,3 +246,16 @@ function rightIsosceles(argument=7) {
 }
 // rightIsosceles();
 
+
+function upsideDownLeft(argument=7) {
+  let triangle;
+  for (let i = argument; i > 0; i--) {
+    triangle = '';
+    for (let j = 0; j < i; j ++) {
+      triangle += '#';
+    }
+    console.log(triangle);
+  }
+}
+upsideDownLeft();
+
