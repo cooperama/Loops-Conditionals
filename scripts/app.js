@@ -259,3 +259,18 @@ function upsideDownLeft(argument=7) {
 }
 upsideDownLeft();
 
+
+function upsideDownRight(argument=7) {
+  let triangle;
+  for (let i = 1; i <= argument; i++) {
+    triangle = '';
+    for (let j = i; j > 0; j--) {
+      triangle += ' ';
+    }
+    for (let k = argument - i; k >= 0; k--) {
+      triangle += '#';
+    }
+    console.log(triangle);
+  }
+}
+upsideDownRight();
