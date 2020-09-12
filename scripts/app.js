@@ -215,3 +215,17 @@ for (let i = 0; i < 1000; i++) {
   if (i % 3 === 0 || i % 5 === 0) sum += i;
 }
 console.log(sum);
+
+
+// Triangles
+function triangles(argument=7) {
+  let triangle;
+  for (let i = 1; i <= argument; i++) {
+    triangle = '';
+    for (let j = i; j > 0; j--) {
+      triangle += '#';
+    }
+    console.log(triangle);
+  }
+}
+triangles();
