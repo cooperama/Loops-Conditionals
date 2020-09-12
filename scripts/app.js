@@ -218,6 +218,7 @@ console.log(sum);
 
 
 // Triangles
+console.log('Triangles');
 function triangles(argument=7) {
   let triangle;
   for (let i = 1; i <= argument; i++) {
@@ -228,9 +229,9 @@ function triangles(argument=7) {
     console.log(triangle);
   }
 }
-// triangles();
+triangles();
 
-
+console.log('rightIsosceles');
 function rightIsosceles(argument=7) {
   let triangle;
   for (let i = 1; i <= argument; i++) {
@@ -244,9 +245,9 @@ function rightIsosceles(argument=7) {
     console.log(triangle);
   }
 }
-// rightIsosceles();
+rightIsosceles();
 
-
+console.log('upsideDownLeft');
 function upsideDownLeft(argument=7) {
   let triangle;
   for (let i = argument; i > 0; i--) {
@@ -259,7 +260,7 @@ function upsideDownLeft(argument=7) {
 }
 upsideDownLeft();
 
-
+console.log('upsideDownRight');
 function upsideDownRight(argument=7) {
   let triangle;
   for (let i = 1; i <= argument; i++) {
@@ -274,3 +275,11 @@ function upsideDownRight(argument=7) {
   }
 }
 upsideDownRight();
+
+
+const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18,12, 17, 12, 71, 18, 15, 12];
+function median(arr) {
+  const medianIndex = Math.floor(arr.length / 2);
+  return arr.sort()[medianIndex];
+}
+console.log(median(nums))
